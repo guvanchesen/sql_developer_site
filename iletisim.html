@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="shortcut icon" href="https://www.oracle.com/asset/web/favicons/favicon-32.png" type="image/x-icon">
+    <title>sql development</title>
+</head>
+<body>
+  <div class="scroll_up" onclick="yukari()" id="myBtn" title="Yukarı çık"><svg  xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="gray" class="bi bi-arrow-up" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+  </svg></i></div>
+    <nav class="navbar navbar-expand-lg navbar-light"  style="background-color: rgb(69, 172, 78);">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">HOME</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    İçerik
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: rgb(69, 172, 78);">
+                  <li><a class="dropdown-item hvr-sweep-to-right button button-cover" href="ders1.html">Ders1</a></li>
+                  <li><a class="dropdown-item hvr-sweep-to-right button button-cover" href="ders2.html">Ders2</a></li>
+
+
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item hvr-sweep-to-right button button-cover" href="kurulum.html">Sql development kurulumu</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="hakkimizda.html">Hakkımızda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="iletisim.html">İletişim</a>
+              </li>
+            </ul>
+            <hr class="d-lg-none text-black-70">
+            <ul class="navbar-nav flex-row flex-wrap ms-lg-auto social">
+                <li class="nav-item col-4 col-lg-auto">
+                  <a class="nav-link p-2" href="https://instagram.com" target="_blank" rel="noopener">
+                    <img src="img/logo_inst2.png" width="36" height="36" class="navbar-nav d-inline-block align-text-top" role="img" title="Instagram"> 
+                    <small class="d-lg-none ms-2">Instagram</small>
+                  </a>
+                </li>
+                <li class="nav-item col-4 col-lg-auto">
+                  <a class="nav-link p-2" href="https://twitter.com" target="_blank" rel="noopener">
+                    <img src="img/logo_twtr2.png" width="36" height="36" class="navbar-nav d-inline-block align-text-top" role="img" title="Twitter">
+                    <small class="d-lg-none ms-2">Twitter</small>
+                  </a>
+                </li>
+              </ul>
+          </div>
+        </div>
+      </nav>
+      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+          <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+          <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/3.jpg" style="width: 100%; height: 300px;">
+          </div>
+          <div class="carousel-item">
+            <img src="img/1.jpg" style="width: 100%; height: 300px;">
+          </div>
+          <div class="carousel-item">
+            <img src="img/2.jpg" style="width: 100%; height: 300px;">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true" title="önceki"></span>
+          <span class="visually-hidden">Önceki</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true" title="sonraki"></span>
+          <span class="visually-hidden">Sonraki</span>
+        </a>
+      </div>
+      <div class="content_iletisim">
+
+		<div class="wrap-contact100">
+			<form class="contact100-form validate-form">
+				<span class="baslik">
+					Bizimle iletişime Geçin
+				</span>
+
+				<div class="wrap-input100">
+					<input class="input100" type="text" id="isim" name="name" placeholder="İsim ve soyisim">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100">
+					<input class="input100" type="text" name="email" placeholder="Mail adres">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100">
+					<input class="input100" type="text" name="phone" placeholder="Telefon numara">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100">
+					<textarea class="input100" name="message" placeholder="Mesajınız"></textarea>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="container-contact100-form-btn">
+					<button class="contact100-form-btn" onclick="gonder()">
+						<span>Gönder &nbsp;
+							<svg xmlns="http://www.w3.org/2000/svg" style="transform: rotate(-12deg);" width="20"  height="20" fill="currentColor" class="bi bi-cursor-fill" viewBox="0 0 16 16">
+                <path d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103z"/>
+              </svg> 
+						</span>
+					</button>
+				</div>
+			</form>
+		</div>
+      </div>
+      <footer class="bd-footer p-3 p-md-5 mt-0 bg-dark">
+        <nav>
+            <ul>
+                <small>
+                    © Copyright 2021 Guvanchmyrat Esenov  All rights are reserved.
+                </small>
+                <li class="nav_item_footer">
+                    <a class="social" href="#">Twitter</a>
+                </li>
+                <li>|</li>
+                <li class="nav_item_footer">
+                    <a class="social" href="#">Instagram</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

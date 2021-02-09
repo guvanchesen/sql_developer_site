@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="shortcut icon" href="https://www.oracle.com/asset/web/favicons/favicon-32.png" type="image/x-icon">
+    <title>sql development</title>
+</head>
+<body>
+  <div class="scroll_up" onclick="yukari()" id="myBtn" title="Yukarı çık"><svg  xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="gray" class="bi bi-arrow-up" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+  </svg></i></div>
+    <nav class="navbar navbar-expand-lg navbar-light"  style="background-color: rgb(69, 172, 78);">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">HOME</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    İçerik
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: rgb(69, 172, 78);">
+                  <li><a class="dropdown-item hvr-sweep-to-right button button-cover" href="ders1.html">Ders1</a></li>
+                  <li><a class="dropdown-item hvr-sweep-to-right button button-cover" href="ders2.html">Ders2</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item hvr-sweep-to-right button button-cover" href="kurulum.html">Sql development kurulumu</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="hakkimizda.html">Hakkımızda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="iletisim.html">İletişim</a>
+              </li>
+            </ul>
+            <hr class="d-lg-none text-black-70">
+            <ul class="navbar-nav flex-row flex-wrap ms-lg-auto social">
+                <li class="nav-item col-4 col-lg-auto">
+                  <a class="nav-link p-2" href="https://instagram.com" target="_blank" rel="noopener">
+                    <img src="img/logo_inst2.png" width="36" height="36" class="navbar-nav d-inline-block align-text-top" role="img" title="Instagram"> 
+                    <small class="d-lg-none ms-2">Instagram</small>
+                  </a>
+                </li>
+                <li class="nav-item col-4 col-lg-auto">
+                  <a class="nav-link p-2" href="https://twitter.com" target="_blank" rel="noopener">
+                    <img src="img/logo_twtr2.png" width="36" height="36" class="navbar-nav d-inline-block align-text-top" role="img" title="Twitter">
+                    <small class="d-lg-none ms-2">Twitter</small>
+                  </a>
+                </li>
+              </ul>
+          </div>
+        </div>
+      </nav>
+      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+          <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+          <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/3.jpg" style="width: 100%; height: 300px;">
+          </div>
+          <div class="carousel-item">
+            <img src="img/1.jpg" style="width: 100%; height: 300px;">
+          </div>
+          <div class="carousel-item">
+            <img src="img/2.jpg" style="width: 100%; height: 300px;">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </a>
+      </div>
+      <div class="content_icerik">
+        
+        <div class="ders">   
+             
+                <h3 class="konu-baslik"><a title="Veritabanı nedir?">Veritabanı nedir?</a></h3>
+                <hr>
+                <p>-Veritabanı, genellikle bir bilgisayar sisteminden elektronik olarak depolanan ve erişilen organize bir veri koleksiyonudur. veritabanları daha karmaşık olduğu durumlarda genellikle formel tasarımı kullanılarak ve modelleme teknikleri geliştirilmektedir.</p>
+                <p>-Belirli bir tarzda organize edilmiş bilgi “koleksiyon”udur.</p>
+                <p> Veritabanı Türleri:
+                    <ul>
+                        <li>İlişkisel Veritabanları (RBMS)</li>
+                        <li>Hiyerarşik</li>
+                        <li>Hiyerarşik</li>
+                        <li>NOSQL</li>
+                        <li>Nesnesel Veritabanı</li>
+                    </ul>   
+                </p>
+                <p><img src="img/ders1/1.png" alt="image 1"></p>
+                <h3 class="konu-baslik"><a title="Yapılandırılmış Sorgu Dili (SQL) Nedir?">Yapılandırılmış Sorgu Dili (SQL) Nedir?</a></h3>
+                <hr>
+                <p>SQL, veriyi sorgulamak, manipüle etmek ve tanımlamak ve aynı zamanda erişim kontrolü sağlamak üzere neredeyse tüm ilişkisel veritabanlarında kullanılan bir programlama dilidir. SQL ilk olarak 1970'li yıllarda Oracle'ın büyük katkıları ile IBM'de geliştirilmiş ve daha sonra SQL ANSI standardı uygulanmış ve SQL IBM, Oracle ve Microsoft gibi şirketlerden pek çok uzantının temelini atmıştır. SQL günümüzde oldukça yaygın bir şekilde kullanılsa da yeni programlama dilleri geliştirilmeye başlandı.</p>
+                <p><img src="img/ders1/2.jpg" alt="image 2"></p>
+                <h3 class="konu-baslik"><a title="Veritabanının Evrimi">Veritabanının Evrimi</a></h3>
+                <hr>
+                <p>Veritabanları, 1960'lı yılların başlarında ortaya çıkmalarından bu yana radikal bir evrim sürecinden geçmiştir. Hiyerarşik veritabanı gibi navigasyonel veritabanları (ağaç benzeri bir modeli temel alır ve yalnızca bir kaynaktan çoklu alıcıya doğru ilişkiye olanak sağlar) ve ağ veritabanı (çoklu ilişkilere olanak sağlayan daha esnek bir model), veriyi depolamak ve manipüle etmek üzere kullanılan orijinal sistemlerdi. Bu ilk sistemler kolay olsa da esnekti. 1980'li yıllarda ilişkisel veritabanları popüler oldu ve ardından 1990'lı yıllarda nesne odaklı veritabanları ortaya çıktı. Daha yakın bir zamanda ise, internetin büyümesine ve yapılandırılmamış verinin daha hızlı bir şekilde işlenmesine duyulan ihtiyaca yanıt olarak NoSQL veritabanları kullanılmaya başlandı. Günümüzde ise bulut veritabanları ve kendi kendini yöneten veritabanları veri toplama, depolama, yönetme ve kullanma konusunda çığır açıyor.</p>
+                <p><img src="img/ders1/3.png" alt="image 3"></p>
+                <h3 class="konu-baslik"><a title="Veritabanı Türleri">Veritabanı Türleri</a></h3>
+                <hr>
+                <p>Çok sayıda farklı veritabanı türü bulunur. Belirli bir organizasyon için ideal veritabanı, organizasyonun veriyi nasıl kullanmayı amaçladığına bağlı olarak değişiklik gösterir.</p>
+                <ul>
+                    <li><p><span style="font-weight: bold;">İlişkisel veritabanları:</span> İlişkisel veritabanları 1980'li yılların sonlarında piyasada hakimiyet kazandı. İlişkisel veritabanındaki öğeler, sütunlar ve satırlardan oluşan bir tablo kümesi şeklinde organiza edilir. İlişkisel veritabanı teknolojisi, yapılandırılmış bilgilere en verimli ve esnek şekilde erişme olanağını sağlar.</p></li>
+                    <li><p><span style="font-weight: bold;">Nesne odaklı veritabanları:</span> Nesne odaklı bir veritabanındaki bilgiler, tıpkı nesne odaklı programlamada olduğu gibi nesneler biçiminde temsil edilir.</p></li>
+                    <li><p><span style="font-weight: bold;">Dağıtılmış veritabanları:</span>Dağıtılmış veritabanı, farklı yerlerde bulunan iki veya daha fazla dosyadan oluşur. Veritabanı, farklı ağlara yayılan ya da aynı fiziksel konumda yer alan birden fazla bilgisayarda depolanabilir.</p></li>
+                    <li><p><span style="font-weight: bold;">Veri ambarları:</span> Merkezi bir veri havuzu olan veri ambarı, özel olarak hızlı sorgulama ve analiz amaçlarıyla tasarlanmış bir veritabanı türüdür.</p></li>
+                    <li><p><span style="font-weight: bold;">NoSQL veritabanları:</span>NoSQL veya ilişkisel olmayan bir veritabanı, yapılandırılmamış ve yarı yapılandırılmış verinin depolanmasına ve manipüle edilmesine olanak sağlar (veritabanına eklenen tüm verinin nasıl oluşturulması gerektiğini tanımlayan ilişkisel veritabanının zıttıdır). NoSQL veritabanları, web uygulama yazılımlarının daha yaygın ve daha karmaşık hale gelmesi ile birlikte popülerlik kazandı.</p></li>
+                    <li><p><span style="font-weight: bold;">Grafik veritabanları:</span> Grafik veritabanı, veriyi birimler ve birimler arasındaki ilişkiler açısından depolar.</p></li>
+                    <li><p><span style="font-weight: bold;">OLTP veritabanları:</span>OLTP veritabanı, birden fazla kullanıcı tarafından çok sayıda işlemin gerçekleştirilmesi için tasarlanmış hızlı ve analitik bir veritabanıdır.</p></li>
+
+                </ul>
+                <p>Günümüzde onlarca veritabanı türü kullanılmaktadır. Daha az yaygın olan diğer veritabanları bilimsel, finansal ya da diğer işlevlere özel olarak tasarlanmıştır. Farklı veritabanı türlerine ek olarak, bulut ve otomasyon gibi radikal ilerlemeler ve teknoloji geliştirme yaklaşımlarındaki değişiklikler veritabanlarının rotasını yepyeni yerlere çeviriyor. En yeni veritabanlarından bazıları şu şekilde sıralanabilir:</p>
+                <ul>
+                    <li><p><span style="font-weight: bold;">Açık kaynak veritabanları:</span>Açık kaynak veritabanı sistemi, kaynak kodu açık kaynak olan bir sistemdir. Bu tür veritabanları SQL veya NoSQL veritabanları olabilir.</p></li>
+                    <li><p><span style="font-weight: bold;">Bulut veritabanları:</span>Bulut veritabanı, yapılandırılmış veya yapılandırılmamış veriden oluşan bir koleksiyon olup özel, genel ya da hibrit bulut bilişim platformunda yer alır. İki tür bulut veritabanı modeli bulunur: geleneksel ve servis olarak veritabanı (DBaaS). DBaaS sayesinde yönetim görevleri ve bakım işlemleri servis sağlayıcı tarafından gerçekleştirilir.</p></li>
+                    <li><p><span style="font-weight: bold;">Çoklu model veritabanı</span>Çoklu model veritabanları, farklı veritabanı türlerini tek bir entegre arka uçta buluşturur. Buna göre çeşitli veri türlerini içerebilirler.</p></li>
+                    <li><p><span style="font-weight: bold;">Belge/JSON veritabanı:</span>Belge odaklı bilgilerin depolanması, alınması ve yönetilmesi için tasarlanan belge veritabanları, veriyi satırlar ve sütunlar yerine JSON biçiminde depolamak için modern bir yöntem sunar.</p></li>
+                    <li><p><span style="font-weight: bold;">Kendi kendini yöneten veritabanları:</span>En yeni ve en ezber bozan veritabanı türü, kendi kendini yöneten veritabanları (aynı zamanda otonom veritabanları olarak bilinir), geleneksel olarak veritabanı yöneticileri tarafından gerçekleştirilen ince ayar, güvenlik, yedekleme, güncelleme ve diğer rutin yönetim görevlerini otomatikleştirmek üzere makine öğreniminden yararlanan bulut tabanlı çözümlerdir.</p></li>
+
+                </ul>
+                <button type="button" class="btn btn-success" onclick="pageRedirect();">Kendi kendini yöneten veritabanlar hakkında daha fazla bilgi edinin </button>
+                <h3 class="konu-baslik"><img id="oracle_logo" src="img/ders1/4.png" alt="oracle logo"><a title="Oracle">Oracle</a></h3>
+                <hr>
+                <p>
+                    <ul>
+                        <li>Oracle, Inc. </li>
+                        <li>Piyasaya çıkan ilk ticari SQL tabanlı veritabanı.</li>
+                        <li>Dünyanın en güçlü ve güvenilir veritabanı olarak gösterilmektedir. </li>
+                        <li>Çok yüksek maliyet fakat çok gelişmiş özellikler </li>
+                        <li>Windows, Unix, Linux, AIX, Solaris.</li>
+                        <li>Oracle, sınırsız sayıda tabloları desteklemektedir. </li>
+                        <li>SQL yanında PL/SQL Geliştirme Dili. </li>
+                    </ul>
+                </p>
+    </div>
+    <div id="icerik">
+      <div id="icindekiler"></div>  
+    </div>
+		</div>
+      <footer class="bd-footer p-3 p-md-5 mt-0 bg-dark">
+        <nav>
+            <ul>
+                <small>
+                    © Copyright 2021 Guvanchmyrat Esenov  All rights are reserved.
+                </small>
+                <li class="nav_item_footer">
+                    <a class="social">Twitter</a>
+                </li>
+                <li>|</li>
+                <li class="nav_item_footer">
+                    <a class="social">Instagram</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
